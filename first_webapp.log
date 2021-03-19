@@ -1,0 +1,5 @@
+ERROR 2021/03/16 02:55:41 utils.go:95: sql: no rows in result set Cannot find user
+ERROR 2021/03/16 02:56:10 utils.go:95: sql: no rows in result set Cannot find user
+ERROR 2021/03/16 02:56:22 utils.go:95: sql: no rows in result set Cannot find user
+ERROR 2021/03/16 02:56:38 utils.go:95: sql: no rows in result set Cannot find user
+ERROR 2021/03/16 03:01:42 utils.go:95: pq: duplicate key value violates unique constraint "users_email_key" Cannot create user
