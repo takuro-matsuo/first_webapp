@@ -1,19 +1,21 @@
 {{ define "content" }}
 
+<br /> 
+
 <div class="panel panel-default">
   <div class="panel-heading">
     <span class="lead"> <i class="fa fa-comment-o"></i> {{ .Topic }}</span>
     <div class="pull-right">
-      Started by {{ .User.Name }} - {{ .CreatedAtDate }}
+        {{ .User.Name }} - {{ .CreatedAtDate }}
     </div>
-
-  </div>
+</div>
+<br /> 
   
   {{ range .Posts }}
   <div class="panel-body">
     <span class="lead"> <i class="fa fa-comment"></i> {{ .Body }}</span>
     <div class="pull-right">
-      {{ .User.Name }} - {{ .CreatedAtDate }}
+        {{ .User.Name }} - {{ .CreatedAtDate }}
     </div>    
   </div>
   {{ end }}    

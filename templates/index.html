@@ -1,20 +1,24 @@
 {{ define "content" }}
-<p class="lead">
-  <a href="/thread/new">スレッドを開始するか</a> 下のどれかに参加しましょう！
+
+<p class="pull-right" style="text-align : right">
+    <a href="/thread/new">スレッドの新規作成はこちら</a>
 </p>
+<br />
+<br />
 
 {{ range . }}
   <div class="panel panel-default">
     <div class="panel-heading">
-      <span class="lead"> <i class="fa fa-comment-o"></i> {{ .Topic }}</span>
+      <span class="lead"> <i class="fa fa-comment-o"></i> {{ .Topic }} </span>
     </div>
     <div class="panel-body">
-      開始ユーザー {{ .User.Name }} - 開始日 {{ .CreatedAtDate }} - 投稿数 {{ .NumReplies }}。
+      By {{ .User.Name }} - {{ .CreatedAtDate }} - {{ .NumReplies }} posts
       <div class="pull-right">
         <a href="/thread/read?id={{.Uuid }}">もっと読む</a>
       </div>
     </div>
   </div>
+  <br /> 
 {{ end }}
 
 {{ end }}
